@@ -1,0 +1,70 @@
+<div class="container" *ngIf="subject">
+ 
+  <h2>{{subject.name | uppercase}} Details</h2>
+  <div><label>id: {{subject.id}}</label></div>
+  <div>
+   
+    <label>name:
+      <input [(ngModel)]="subject.name" placeholder="name">
+    </label>
+    <button (click)="goBack()">GO BACK</button>
+  </div>
+
+  <div>
+    <button (click)="toadd = true" *ngIf="!toadd">ADD Grade</button>
+    <button (click)="todel = true" *ngIf="!todel">DELETE Grade</button>
+  </div>
+
+    <div *ngIf="subject.grades.length!=0">
+    <h2>Grades</h2>
+    <!-- <ul class="grade">
+        <li class="grade" *ngFor="let grade of subject.grades">
+          <span class="badge">{{grade.id}}</span> {{grade.value}} {{grade.description}}
+        </li>
+    </ul> -->
+    <table align="center" *ngIf="subject.grades.length!=0" class="redTable">
+        <thead>
+        <tr>
+        <th>ID</th>
+        <th>Value</th>
+        <th>Desription</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+        <td colspan="3">
+        <div class="links">&nbsp;&nbsp;</div>
+        </td>
+        </tr>
+        </tfoot>
+
+
+        <tbody>
+        <tr *ngFor="let grade of subject.grades">
+        <td>{{grade.id}}</td>
+        <td>{{grade.value}}</td>
+        <td>{{grade.description}}</td>
+        </tr>
+        </tbody>
+
+
+    </table>
+
+  </div>
+
+    <div *ngIf="toadd" class="addGrade">
+        <label>value:
+            <input [(ngModel)]="newGradeValue" placeholder="value">
+        </label>
+        <label>description:
+            <input [(ngModel)]="newGradeDescription" placeholder="description">
+        </label>
+        <button (click)="ADD_G()">ADD</button>
+    </div>
+    <div *ngIf="todel" class="delgrade">
+        <label>id:
+            <input [(ngModel)]="idToDel" placeholder="id">
+        </label>
+        <button (click)="DEL_G()">DELETE</button>
+    </div>
+

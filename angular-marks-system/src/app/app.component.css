@@ -1,0 +1,20 @@
+#title {
+  color: #FFFFFF;
+  background: #333333;
+  text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, rgb(160, 33, 211) 0px 0px 20px, rgb(160, 33, 211) 0px 0px 30px, rgb(160, 33, 211) 0px 0px 40px, rgb(160, 33, 211) 0px 0px 50px, rgb(160, 33, 211) 0px 0px 75px;
+  color: #FFFFFF;
+  background: #848583;
+  border-radius: 5px;
+}
+
+.container{
+  background-image: url("../app/background.jpg");
+  background-attachment: fixed;
+  min-height: 95vh;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+

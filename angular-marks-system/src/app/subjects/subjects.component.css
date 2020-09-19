@@ -1,0 +1,94 @@
+h2{
+  color: #616161;
+  background: #bababa;
+  text-shadow: #e0e0e0 1px 1px 0;
+  color: #8a178a;
+  background: #bababa;
+  text-align: center;
+}
+  .subject {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+    display: flex;
+    font-size: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .subject li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+    border: 10px inset #1C6EA4;
+    border-radius: 20px 0px 40px 0px;
+
+  }
+  .subject li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+  }
+  .subject .text {
+    position: relative;
+    top: -3px;
+  }
+  .subject .badge {
+    display: inline-block;
+    font-size: small;
+    color: rgb(143, 40, 138);
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: rgb(197, 220, 231);
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.4em;
+    margin-right: .8em;
+    border: 3px dashed #1C6EA4;
+    border-radius: 8px 8px 0px 0px;
+  }
+  .subject a {
+    color: rgb(107, 19, 100);
+    text-decoration: none;
+    position: relative;
+    display: block;
+    width: 220px;
+    height: 60px;
+  }
+
+  button{
+    -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(242,79,255,0); 
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(242,79,255,0);
+    background-color: #80C7FF;
+    color: #444444;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+    color: #444444;
+    margin: 0px 0px 30px 30px;
+}
+
+input{
+  border-style:solid; 
+  padding:8px; 
+  font-size:20px;
+  border-width:5px; 
+  border-radius:9px; 
+  background-color:#c0e3f0; 
+  border-color:#942b94; 
+  color:#456954; 
+  font-weight:bold; 
+  font-family:monospace;
+  margin-top: 10px;
+}
+
+label{
+  margin-left: 30px;
+  font-size: 22px;
+  color:#042b57; 
+  font-weight: bold;
+}

@@ -1,0 +1,26 @@
+<h2>My Current Subjects</h2>
+<div class="container" width="400px">
+<ul class="subject">
+  <li *ngFor="let subject of subjects">
+    <a routerLink="/detail/{{subject.id}}">
+      <span class="badge">{{subject.id}}</span> {{subject.name}}
+    </a>
+  </li>
+</ul>
+<div>
+
+<button (click)="toadd = true" *ngIf="!toadd">ADD Subject</button>
+<div *ngIf="toadd" class="addSubject">
+    <label>name:
+        <input [(ngModel)]="newSubjectName" placeholder="name">
+    </label>
+    <button (click)="ADD_S()">ADD</button>
+  </div>
+
+  <button (click)="todel = true" *ngIf="!todel">DELETE Subject</button>
+  <div *ngIf="todel" class="delSubject">
+      <label>id:
+          <input [(ngModel)]="idToDel" placeholder="id">
+      </label>
+      <button (click)="DEL_S()">DELETE</button>
+    </div>
